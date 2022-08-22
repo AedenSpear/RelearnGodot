@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="SimpleRPG"
+run/main_scene="res://Scenes/Main.tscn"
 
 [debug]
 
@@ -37,3 +38,4 @@ quality/driver/fallback_to_gles2=true
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 2d/snapping/use_gpu_pixel_snap=true
+quality/depth/hdr=false
