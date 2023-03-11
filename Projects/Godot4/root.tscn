@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://dx4lwpyakl2ex"]
+
+[ext_resource type="Texture2D" uid="uid://db3g7qtf15xch" path="res://Entities/Kaien.png" id="1_luni2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54i1c"]
+atlas = ExtResource("1_luni2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nalj"]
+atlas = ExtResource("1_luni2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lw0w3"]
+atlas = ExtResource("1_luni2")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fcgd"]
+atlas = ExtResource("1_luni2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r6wxr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54i1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nalj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lw0w3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fcgd")
+}],
+"loop": true,
+"name": &"down_walk",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Root" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r6wxr")
+animation = &"new_animation"
