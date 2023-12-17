@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://pc25rjat1dx4"]
+
+[ext_resource type="PackedScene" uid="uid://wnh8l0s6355n" path="res://Entities/cube.blend" id="1_ex5q1"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0317346, -0.240402, 2.38419e-07)
+
+[node name="cube" parent="." instance=ExtResource("1_ex5q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0877424, 0.0739515, -0.01399)
+
+[editable path="cube"]

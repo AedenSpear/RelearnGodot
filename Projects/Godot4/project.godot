@@ -11,5 +11,15 @@ config_version=5
 [application]
 
 config/name="Godot 4"
-config/features=PackedStringArray("4.0", "Forward Plus")
+run/main_scene="res://TileSetTest.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[dotnet]
+
+project/assembly_name="Godot 4"
